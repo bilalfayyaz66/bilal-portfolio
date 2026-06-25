@@ -7,9 +7,11 @@ import {
   MapPin,
   ExternalLink,
   Star,
+  BriefcaseBusiness,
 } from "lucide-react";
 import { profile, projects, skillGroups } from "./data.js";
 import "./styles.css";
+
 function Header() {
   return (
     <header className="site-header">
@@ -20,6 +22,7 @@ function Header() {
       <nav className="nav-links" aria-label="Main navigation">
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
+        <a href="#freelance">Freelance</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -90,7 +93,6 @@ function Skills() {
         <div className="section-heading">
           <p className="eyebrow">Skills</p>
           <h2>Technical skills</h2>
-          
         </div>
 
         <div className="skills-grid">
@@ -167,10 +169,10 @@ function Projects() {
       <section id="projects" className="section">
         <div className="section-heading">
           <p className="eyebrow">Featured Projects</p>
-          
+
           <p>
-            AI engineering, computer vision, automation and data engineering projects built around practical business
-            and technical problems.
+            AI engineering, computer vision, automation and data engineering
+            projects built around practical business and technical problems.
           </p>
         </div>
 
@@ -178,6 +180,50 @@ function Projects() {
           {projects.map((project) => (
             <ProjectCard project={project} key={project.title} />
           ))}
+        </div>
+      </section>
+    </div>
+  );
+}
+
+function FreelanceExperience() {
+  return (
+    <div className="freelance-wrap">
+      <section id="freelance" className="section freelance-section">
+        <div className="section-heading">
+          <p className="eyebrow">Freelance Experience</p>
+          <h2>Level 2 Seller on Fiverr</h2>
+          <p>
+            Delivered client projects across data engineering, big data
+            analytics, AI automation, agent-based workflows, and computer
+            vision.
+          </p>
+        </div>
+
+        <div className="freelance-card">
+          <div className="freelance-icon">
+            <BriefcaseBusiness size={30} />
+          </div>
+
+          <div className="freelance-content">
+            <h3>Fiverr Freelance Projects</h3>
+            <p>
+              As a Level 2 Fiverr Seller, I have worked with clients on
+              practical data pipelines, big data analytics workflows, automation
+              systems, AI agents, and computer vision tasks. My focus is on
+              understanding the business need first, then delivering clean,
+              reliable, and maintainable technical solutions.
+            </p>
+
+            <a
+              className="button primary freelance-button"
+              href="https://www.fiverr.com/s/6YyvEVB"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View Fiverr Profile
+            </a>
+          </div>
         </div>
       </section>
     </div>
@@ -192,7 +238,8 @@ function Contact() {
           <p className="eyebrow">Contact</p>
           <h2>Let’s connect</h2>
           <p>
-            For roles, collaborations or project discussions, you can reach me here.
+            For roles, collaborations or project discussions, you can reach me
+            here.
           </p>
         </div>
 
@@ -243,6 +290,7 @@ export default function App() {
         <Hero />
         <Skills />
         <Projects />
+        <FreelanceExperience />
         <Contact />
       </main>
 

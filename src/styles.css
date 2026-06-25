@@ -478,6 +478,62 @@ a {
   background: #123c69;
 }
 
+/* Freelance Experience */
+
+.freelance-wrap {
+  background: radial-gradient(
+      circle at 18% 20%,
+      rgba(56, 189, 248, 0.1),
+      transparent 30%
+    ),
+    linear-gradient(135deg, #0f1f34 0%, #10283f 100%);
+}
+
+.freelance-section {
+  color: var(--text-light);
+}
+
+.freelance-card {
+  max-width: 920px;
+  background: rgba(248, 250, 252, 0.97);
+  color: var(--text-dark);
+  border-radius: 22px;
+  padding: 36px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.freelance-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  background: #0b1728;
+  color: var(--primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.freelance-content h3 {
+  margin: 0 0 12px;
+  color: #0f172a;
+  font-size: 27px;
+  letter-spacing: -0.03em;
+}
+
+.freelance-content p {
+  margin: 0;
+  color: var(--muted-dark);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.freelance-button {
+  margin-top: 24px;
+}
+
 /* Contact */
 
 .contact-wrap {
@@ -585,6 +641,13 @@ a {
   }
 }
 
+@media (max-width: 700px) {
+  .freelance-card {
+    grid-template-columns: 1fr;
+    padding: 26px;
+  }
+}
+
 @media (max-width: 560px) {
   .site-header {
     align-items: flex-start;
@@ -594,6 +657,7 @@ a {
 
   .nav-links {
     gap: 18px;
+    flex-wrap: wrap;
   }
 
   .section {
