@@ -217,7 +217,7 @@ function FreelanceExperience() {
 
             <a
               className="button primary freelance-button"
-              href="https://www.fiverr.com/s/6YyvEVB"
+              href="https://www.fiverr.com/bilal_fayyaz_?public_mode=true"
               target="_blank"
               rel="noreferrer"
             >
