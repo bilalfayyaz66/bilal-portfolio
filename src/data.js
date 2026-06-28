@@ -1,10 +1,10 @@
 export const profile = {
   name: "Bilal Fayyaz",
-  role: "AI Engineer and Data Scientist",
+  role: "AI Engineer & Data Scientist",
   intro:
-    "I work on practical AI systems across agentic AI, computer vision, automation, and data engineering. I focus on building reliable ML workflows, ETL pipelines, and automation solutions that can support real business operations.",
+    "I’m an AI Engineer and Data Science practitioner focused on building practical AI systems, data pipelines, automation workflows, and computer vision solutions. I work across machine learning, agentic AI, big data analytics, and MLOps to turn raw data and business requirements into reliable technical solutions.",
   availability:
-    "Open to AI Engineering, Computer Vision, Automation and Data Engineering roles.",
+    "Open to AI Engineering, Data Science, Computer Vision, Automation, MLOps, and Data Engineering roles.",
   email: "bilalfayyaz328@gmail.com",
   phone: "+923030595057",
   location: "Pakistan",
@@ -20,24 +20,23 @@ export const skillGroups = [
       "RAG pipelines",
       "LLM application design",
       "Prompt engineering",
-      "LLM fine-tuning",
-      "Computer vision pipelines",
-      "Workflow automation",
+      "AI automation",
       "Model evaluation",
       "API-based AI products",
+      "Generative AI workflows",
     ],
   },
   {
-    title: "Data Science & ML",
+    title: "Computer Vision & ML",
     skills: [
+      "Computer vision pipelines",
+      "OpenCV",
+      "Image classification",
+      "Pattern recognition",
       "Machine learning",
       "Deep learning",
       "Anomaly detection",
       "Recommendation systems",
-      "Classification models",
-      "Feature engineering",
-      "Model monitoring",
-      "Experiment tracking",
     ],
   },
   {
@@ -63,14 +62,12 @@ export const skillGroups = [
       "Scikit-learn",
       "PyTorch",
       "TensorFlow",
-      "OpenCV",
       "FastAPI",
       "Docker",
-      "GitHub Actions",
       "MLflow",
+      "GitHub Actions",
       "AWS",
       "GCP",
-      "Kubernetes",
       "Vercel",
     ],
   },
@@ -78,19 +75,19 @@ export const skillGroups = [
 
 export const projects = [
   {
-    title: "MarketMinds : AI-Powered Investment Intelligence Dashboard",
+    title: "MarketMinds — AI Investment Intelligence Dashboard",
     category: "AI FinTech Platform",
     repo: "https://github.com/bilalfayyaz66/MarketMinds-AI-Powered-Investment-Intelligence-Dashboard",
     featured: true,
     summary:
-      "Designed an AI-powered investment intelligence dashboard that brings market data, AI prediction, sentiment analysis, chart pattern recognition, portfolio analytics, authentication, and real-time decision support into one unified platform.",
+      "Designed an AI-powered investment intelligence dashboard that combines market data, AI prediction, sentiment analysis, chart pattern recognition, portfolio analytics, authentication, and real-time decision support in one platform.",
     businessImpact:
-      "Built to reduce fragmented investment analysis workflows by combining market data, AI signals, technical analysis, sentiment, portfolio risk, and dashboard visualization in one system. The project targets students, beginner investors, and SMEs that need affordable and organized market intelligence.",
+      "Built to reduce fragmented investment analysis workflows by combining market data, AI signals, technical analysis, sentiment, portfolio risk, and dashboard visualization. The platform is designed for students, beginner investors, and SMEs that need organized and affordable market intelligence.",
     highlights: [
-      "Designed a modular system with data collection, AI analysis, backend APIs, frontend dashboard, authentication, deployment, and monitoring layers.",
-      "Included AI modules for price prediction, chart pattern recognition, financial sentiment analysis, AI signal generation, portfolio optimization, and reinforcement learning based trading signals.",
+      "Designed modular layers for data collection, AI analysis, backend APIs, frontend dashboard, authentication, deployment, and monitoring.",
+      "Included AI modules for price prediction, chart pattern recognition, financial sentiment analysis, AI signal generation, portfolio optimization, and reinforcement learning-based trading signals.",
       "Used FastAPI-style backend services, React dashboard concepts, Google OAuth, JWT sessions, Docker, cloud deployment planning, and real-time API design.",
-      "Documented 19 test cases across economic data collection, ML training, pattern recognition, sentiment analysis, portfolio optimization, Google Auth, deployment health, and end-to-end integration.",
+      "Documented testing across economic data collection, ML training, pattern recognition, sentiment analysis, portfolio optimization, Google Auth, deployment health, and end-to-end integration.",
     ],
     tech: [
       "Python",
